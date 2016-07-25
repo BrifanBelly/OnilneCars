@@ -1,0 +1,137 @@
+<div class="row">
+<div class="col-4-md">
+<div class="car-images">
+  <img ng-src="{{img}}" class="car"
+      ng-class="{selected: img === $ctrl.mainImageUrl}"
+      ng-repeat="img in $ctrl.car.images" height="100%" width="100%" />
+</div>
+</div>
+<div class="col-8-md">
+<h1>{{$ctrl.car.name}}</h1>
+
+<p>{{$ctrl.car.description}}</p>
+
+<ul class="car-thumbs">
+  <li ng-repeat="img in $ctrl.car.images">
+    <img ng-src="{{img}}" ng-click="$ctrl.setImage(img)"/>
+  </li>
+</ul>
+
+<ul class="specs" style="width:95%">
+  <li>
+    <span>MSRP</span>
+    <dl>
+      <dt>${{$ctrl.car.msrp}}</dt>
+    </dl>
+  </li>
+  <dl> 
+  <dt>Options</dt>
+  <dd>{{$ctrl.car.options}}</dd>
+  </dl>
+
+</ul>
+</div>
+</div>
+<!--
+<ul class="specs">
+  <li>
+    <span>Availability and Networks</span>
+    <dl>
+      <dt>Availability</dt>
+      <dd ng-repeat="availability in $ctrl.car.availability">{{availability}}</dd>
+    </dl>
+  </li>
+  <li>
+    <span>Battery</span>
+    <dl>
+      <dt>Type</dt>
+      <dd>{{$ctrl.car.battery.type}}</dd>
+      <dt>Talk Time</dt>
+      <dd>{{$ctrl.car.battery.talkTime}}</dd>
+      <dt>Standby time (max)</dt>
+      <dd>{{$ctrl.car.battery.standbyTime}}</dd>
+    </dl>
+  </li>
+  <li>
+    <span>Storage and Memory</span>
+    <dl>
+      <dt>RAM</dt>
+      <dd>{{$ctrl.car.storage.ram}}</dd>
+      <dt>Internal Storage</dt>
+      <dd>{{$ctrl.car.storage.flash}}</dd>
+    </dl>
+  </li>
+  <li>
+    <span>Connectivity</span>
+    <dl>
+      <dt>Network Support</dt>
+      <dd>{{$ctrl.car.connectivity.cell}}</dd>
+      <dt>WiFi</dt>
+      <dd>{{$ctrl.car.connectivity.wifi}}</dd>
+      <dt>Bluetooth</dt>
+      <dd>{{$ctrl.car.connectivity.bluetooth}}</dd>
+      <dt>Infrared</dt>
+      <dd>{{$ctrl.car.connectivity.infrared}}</dd>
+      <dt>GPS</dt>
+      <dd>{{$ctrl.car.connectivity.gps}}</dd>
+    </dl>
+  </li>
+  <li>
+    <span>Android</span>
+    <dl>
+      <dt>OS Version</dt>
+      <dd>{{$ctrl.car.android.os}}</dd>
+      <dt>UI</dt>
+      <dd>{{$ctrl.car.android.ui}}</dd>
+    </dl>
+  </li>
+  <li>
+    <span>Size and Weight</span>
+    <dl>
+      <dt>Dimensions</dt>
+      <dd ng-repeat="dim in $ctrl.car.sizeAndWeight.dimensions">{{dim}}</dd>
+      <dt>Weight</dt>
+      <dd>{{$ctrl.car.sizeAndWeight.weight}}</dd>
+    </dl>
+  </li>
+  <li>
+    <span>Display</span>
+    <dl>
+      <dt>Screen size</dt>
+      <dd>{{$ctrl.car.display.screenSize}}</dd>
+      <dt>Screen resolution</dt>
+      <dd>{{$ctrl.car.display.screenResolution}}</dd>
+      <dt>Touch screen</dt>
+      <dd>{{$ctrl.car.display.touchScreen}}</dd>
+    </dl>
+  </li>
+  <li>
+    <span>Hardware</span>
+    <dl>
+      <dt>CPU</dt>
+      <dd>{{$ctrl.car.hardware.cpu}}</dd>
+      <dt>USB</dt>
+      <dd>{{$ctrl.car.hardware.usb}}</dd>
+      <dt>Audio / headcar jack</dt>
+      <dd>{{$ctrl.car.hardware.audioJack}}</dd>
+      <dt>FM Radio</dt>
+      <dd>{{$ctrl.car.hardware.fmRadio}}</dd>
+      <dt>Accelerometer</dt>
+      <dd>{{$ctrl.car.hardware.accelerometer}}</dd>
+    </dl>
+  </li>
+  <li>
+    <span>Camera</span>
+    <dl>
+      <dt>Primary</dt>
+      <dd>{{$ctrl.car.camera.primary}}</dd>
+      <dt>Features</dt>
+      <dd>{{$ctrl.car.camera.features.join(', ')}}</dd>
+    </dl>
+  </li>
+  <li>
+    <span>Additional Features</span>
+    <dd>{{$ctrl.car.additionalFeatures}}</dd>
+  </li>
+</ul>
+-->

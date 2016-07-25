@@ -1,0 +1,134 @@
+/* app css stylesheet */
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+.menu > li:nth-child(1):before {
+  content: "";
+  padding: 0;
+}
+
+.car {
+  background-color: white;
+  display: none;
+  float: left;
+  height: 400px;
+  margin-bottom: 2em;
+  margin-right: 3em;
+  //padding: 2em;
+  width: 400px;
+}
+
+.car:first-child {
+  display: block;
+}
+
+.car-images {
+  background-color: white;
+  float: left;
+  height: 45%;
+  overflow: hidden;
+  position: relative;
+  width: auto;
+}
+
+
+
+.thumb {
+  float: left;
+  height: 20%;
+  margin: -0.3em 1em 1.5em 0;
+  padding-bottom: 1em;
+  width: 20%;
+}
+
+
+.car-thumbs {
+  list-style: none;
+  margin: 0;
+}
+
+.car-thumbs img {
+  height: 120px;
+  //padding: 1em;
+  width: 120px;
+}
+
+.car-thumbs li {
+  background-color: white;
+  border: 1px solid black;
+  cursor: pointer;
+  display: inline-block;
+  margin: 1em;
+}
+
+.specs {
+  //clear: both;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.specs dt {
+  font-weight: bold;
+}
+
+.specs > li {
+  display: inline-block;
+  vertical-align: top;
+  width: 200px;
+}
+
+.specs > li > span {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+//search box
+
+.typeahead-demo .custom-popup-wrapper {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    background-color: #f9f9f9;
+  }
+
+  .typeahead-demo .custom-popup-wrapper > .message {
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+    color: #868686;
+  }
+
+  .typeahead-demo .custom-popup-wrapper > .dropdown-menu {
+    position: static;
+    float: none;
+    display: block;
+    min-width: 160px;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+  }

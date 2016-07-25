@@ -1,0 +1,87 @@
+[
+    {
+        "age": 10, 
+        "carrier": "Dell", 
+        "id": "Acura", 
+        "imageUrl": "http://blog.caranddriver.com/wp-content/uploads/2015/08/2016-Acura-ILX-A-Spec-122-876x535.jpg", 
+        "name": "2016 Acura ILX A-Spec", 
+        "snippet": "The 2016 Acura ILX A-Spec; Your Personal Express Lane to Everything"
+    },
+	{
+        "age": 8, 
+        "carrier": "Dell", 
+        "id": "Mazda-CX-9", 
+        "imageUrl": "http://blog.caranddriver.com/wp-content/uploads/2016/07/2016-Mazda-CX-9-Signature-AWD-101-876x535.jpg", 
+        "name": "2016 Mazda CX-9 AWD", 
+        "snippet": "Three-row crossovers are the new minivans. They haul families and stuff with increasingly bland sameness. But what if there existed an affordable option that's attractive and fun to drive?"
+    }, 	
+	
+	{
+        "age": 6, 
+        "carrier": "Dell", 
+        "id": "Honda-Accord-Hybrid", 
+        "imageUrl": "http://blog.caranddriver.com/wp-content/uploads/2016/07/2017-Honda-Accord-hybrid-201-876x535.jpg", 
+        "name": "2017 Honda Accord Hybrid", 
+        "snippet": "The greenest Accord is not our favorite Accord"
+    }, 	
+	
+	{
+        "age": 4, 
+        "carrier": "Dell", 
+        "id": "Infiniti-QX30-AWD", 
+        "imageUrl": "http://blog.caranddriver.com/wp-content/uploads/2016/07/2017-Infiniti-QX30-AWD-101-876x535.jpg", 
+        "name": "2017 Infiniti QX30 AWD", 
+        "snippet": "Infiniti throws its hat into the tiny-crossover ring."
+    }, 
+
+	{
+        "age": 11, 
+        "carrier": "Dell", 
+        "id": "BMW-M3-Manual", 
+        "imageUrl": "http://media.caranddriver.com/images/14q4/651561/2015-bmw-m3-photo-660748-s-986x603.jpg", 
+        "name": "2015 BMW M3 Manual", 
+        "snippet": "Seventeen months with the latest incarnation of the vaunted M3."
+    },
+	{
+        "age": 1, 
+        "carrier": "Dell", 
+        "id": "Smart-Fortwo-Brabus", 
+        "imageUrl": "http://blog.caranddriver.com/wp-content/uploads/2016/07/2017-Brabus-Smart-ForTwo-1013-876x535.jpg", 
+        "name": "2017 Smart Fortwo Brabus", 
+        "snippet": "The latest Smart gets an attitude."
+    }, 
+	{
+        "age": 3, 
+        "carrier": "Dell", 
+        "id": "Porsche-Cayman", 
+        "imageUrl": "http://blog.caranddriver.com/wp-content/uploads/2016/07/2017-Porsche-718-Cayman-101-876x537.jpg", 
+        "name": "2017 Porsche 718 Cayman", 
+        "snippet": "Now, finally, a worthy alternative to the S.."
+    },
+	{
+        "age": 5, 
+        "carrier": "Dell", 
+        "id": "Subaru-BRZ", 
+        "imageUrl": "http://blog.caranddriver.com/wp-content/uploads/2016/07/2017-Subaru-BRZ-JDM-spec-1091-876x535.jpg", 
+        "name": "2017 Subaru BRZ", 
+        "snippet": "Refreshed and refined."
+    }, 
+	{
+        "age": 7, 
+        "carrier": "Dell", 
+        "id": "Toyota-Prius", 
+        "imageUrl": "http://blog.caranddriver.com/wp-content/uploads/2016/07/2017-Toyota-Prius-Prime-plug-in-hybrid-112-876x535.jpg", 
+        "name": "2017 Toyota Prius Prime Plug-In Hybrid", 
+        "snippet": "Revenge of the nerds."
+    }, 
+	{
+        "age": 9, 
+        "carrier": "Dell", 
+        "id": "Rolls-Royce", 
+        "imageUrl": "http://blog.caranddriver.com/wp-content/uploads/2016/07/2016-Rolls-Royce-Dawn-201-876x535.jpg", 
+        "name": "2016 Rolls-Royce Dawn", 
+        "snippet": "The glamour of the mechanical."
+    }
+	
+
+]

@@ -1,0 +1,14 @@
+<div class="container-fluid">
+  <center>
+  <div style="height: 70%;width: 50%;">
+    <div uib-carousel interval="myInterval" no-wrap="noWrapSlides">
+      <div uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
+        <img ng-src="{{slide.image}}" style="margin:auto;" height="100%" width="100%">
+        <div class="carousel-caption">
+          <a href="{{slide.link}}"><p>{{slide.text}}</p></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  	</center>
+</div>

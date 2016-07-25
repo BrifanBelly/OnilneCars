@@ -1,0 +1,53 @@
+  <div class="row">
+    <div class="col-md-2">
+      <!--Sidebar content-->
+
+      <p>
+        Search:
+        <input ng-model="$ctrl.query" class="form-control" placeholder="Search" uib-typeahead="state for state in $ctrl.states | filter:$viewValue | limitTo:8" />
+      </p>
+<br />
+<br />
+      <p>
+        Sort by:
+      </p>
+	  
+	    <select class="dropdown" ng-model="$ctrl.orderProp">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><option value="name">Alphabetical</option></li>
+            <li><option value="age">Newest</option></li>
+            <li><option value="msrp">Price</option></li>
+          </ul>
+        </select>
+
+    </div>
+    <div class="col-md-10">
+      <!--Body content-->
+<!--
+      <ul class="cars">
+        <li ng-repeat="car in $ctrl.cars | filter:$ctrl.query | orderBy:$ctrl.orderProp" class="thumbnail">
+          <a href="#/cars/{{car.id}}" class="thumb">
+            <img ng-src="{{car.imageUrl}}" alt="{{car.name}}" />
+          </a>
+          <a href="#/cars/{{car.id}}">{{car.name}}</a>
+          <p>{{car.snippet}}</p>	
+        </li>
+      </ul>
+-->	  
+	  <table calss="table"> 
+	  <tr ng-repeat="car in $ctrl.cars | filter:$ctrl.query | orderBy:$ctrl.orderProp" class="thumbnail  car-list-item"> 
+	  <td>
+	   <a href="#!/cars/{{car.id}}" class="thumb">
+            <img ng-src="{{car.imageUrl}}" alt="{{car.name}}" />
+          </a>
+          <a href="#!/cars/{{car.id}}">{{car.name}}</a>
+          <p>{{car.snippet}}</p>
+		  </td>
+	  </tr>
+	  
+	  </table>
+
+    </div>
+  </div>
+</div>
